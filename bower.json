@@ -1,0 +1,9 @@
+{
+  "name": "Daylite",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "latest",
+    "fontawesome": "latest",
+    "jquery": "1.11.2"
+  }
+}
