@@ -1,0 +1,14 @@
+// Text Color
+$color-text: #818181;
+$color-nav-link: #a7a7a7;
+$color-link: #a89574;
+
+// Background Color
+$bg-navbar-default: #fff;
+$bg-jumbotron: #2a2a2a;
+
+
+// Function
+@function ls($target) {
+  @return $target / 1000 * 1em;
+}

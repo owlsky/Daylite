@@ -1,0 +1,108 @@
+@import "config";
+
+/* Base */
+
+body {
+  color: $color-text;
+}
+
+h2 {
+  font-size: 25px;
+  color: #767676;
+}
+
+/* Layout */
+
+// Header
+
+.navbar {
+  margin-bottom: 0;
+  padding: 25px 0 24px;
+  &-default {
+    background-color: $bg-navbar-default;
+  }
+  &-brand {
+    margin-right: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    span {
+      font-weight: lighter;
+      color: $color-link;
+    }
+  }
+}
+.navbar-nav > li > a { color: $color-nav-link; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: $color-link;
+  background-color: transparent;
+}
+.navbar-default .navbar-brand {
+  color: #c2c2c2;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #c2c2c2;
+}
+
+// jumbotron
+
+.jumbotron {
+  margin-bottom: 0;
+  background-color: $bg-jumbotron;
+  h1 {
+    letter-spacing: ls(-25);
+    color: $color-link;
+    @media screen and (min-width: 768px) {
+      font-size: 55px;
+    }
+  }
+  p {
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: ls(-25);
+    color: #c7c7c7;
+  }
+}
+
+// Intro
+
+.well {
+  .btn-default {
+    margin-right: 20px;
+  }
+}
+
+
+/* Modules */
+
+// Button
+
+.btn-default {
+  color: $color-link;
+  background-color: transparent;
+  border-color: $color-link;
+}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    color: lighten($color-link, 5%);
+    background-color: transparent;
+    border-color: lighten($color-link, 5%);
+}
+
+.btn-danger {
+  color: #a8747e;
+  background-color: transparent;
+  border-color: #a8747e;
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger.focus, .btn-danger:active, .btn-danger.active, .open > .dropdown-toggle.btn-danger {
+  color: darken(#a8747e, 10%);
+  background-color: transparent;
+  border-color: darken(#a8747e, 10%);
+}
+
+// Lead
+
+.lead {
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
