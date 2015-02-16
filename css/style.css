@@ -9,6 +9,12 @@ h2 {
 blockquote {
   padding: 10px 40px;
   border-left: none; }
+  blockquote footer {
+    color: #a89574; }
+    blockquote footer:before {
+      content: 'By '; }
+    blockquote footer cite {
+      font-style: normal; }
 
 /* Layout */
 .navbar {
@@ -58,6 +64,10 @@ blockquote {
 
 .nav-justified {
   counter-reset: headings; }
+  .nav-justified .circle-lg {
+    margin: 0 auto; }
+    .nav-justified .circle-lg .fa {
+      line-height: 90px; }
   .nav-justified h4 {
     font-size: 18px;
     counter-increment: headings; }
@@ -65,15 +75,9 @@ blockquote {
       content: counter(headings) ". ";
       color: #a89574; }
 
-.media-date {
-  width: 60px;
-  height: 60px;
-  font-size: 12px;
-  text-align: center;
-  color: #a89574;
-  border: 2px solid #a89574;
-  border-radius: 30px; }
-  .media-date strong {
+.media .circle-md {
+  font-size: 12px; }
+  .media .circle-md strong {
     position: relative;
     top: 8px;
     display: block;
@@ -89,6 +93,27 @@ blockquote {
   color: #a89574; }
   .list-circle span {
     color: #818181; }
+
+.t-footer {
+  color: #d2d2d2;
+  background-color: #393939; }
+  .t-footer h3 {
+    color: #efefef; }
+  .t-footer a {
+    color: #d2d2d2; }
+  .t-footer .list-unstyled li {
+    position: relative;
+    padding-left: 20px; }
+    .t-footer .list-unstyled li .fa {
+      position: absolute;
+      left: 0;
+      top: 3px;
+      color: #a89574; }
+
+.t-copyright {
+  margin-top: 2em;
+  padding-top: 20px;
+  background-color: #333; }
 
 /* Modules */
 .btn-default {
@@ -129,6 +154,26 @@ blockquote {
     font-size: 13px;
     color: #a89574; }
 
+.circle-md, .circle-lg {
+  text-align: center;
+  color: #a89574;
+  border: 2px solid #a89574; }
+
+.circle-md {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px; }
+
+.circle-lg {
+  width: 90px;
+  height: 90px;
+  border-radius: 45px; }
+
+.form-control {
+  color: #818181;
+  background-color: #2e2e2e;
+  border-color: #2e2e2e; }
+
 /* Helpers */
 .pt1 {
   padding-top: 1em; }
@@ -138,5 +183,8 @@ blockquote {
 
 .mt1 {
   margin-top: 1em; }
+
+.mb0 {
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
